@@ -23,6 +23,7 @@ form_search.addEventListener('submit', async (ev) => {
   };
 
   if (city_name.length !== 0) {
+    alert_input.innerHTML = "";
     weather.style.display = "block";
   };
 

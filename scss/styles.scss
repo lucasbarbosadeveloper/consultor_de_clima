@@ -60,6 +60,8 @@ body{
   .alert_input{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #5a7cdc;
 
     img{
@@ -166,10 +168,13 @@ body{
     .weather{
       .infos{
         .temp{
+          flex-direction: column;
+          padding: 0px;
+          margin-bottom: 1rem;
+
           .temp_info{
-            .temp_value{
-              font-size: 2.75rem;
-            }
+            text-align: center;
+
           }
         }
       }
@@ -188,12 +193,10 @@ body{
 
       .infos{
         .temp{
-          flex-direction: column;
-          padding: 0px;
-          margin-bottom: 1rem;
-          
           .temp_info{
-            text-align: center;
+            .temp_value{
+              font-size: 2rem;
+            }
           }
         }
 

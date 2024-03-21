@@ -55,6 +55,8 @@ body {
 .main .alert_input {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #5a7cdc;
 }
 .main .alert_input img {
@@ -134,8 +136,13 @@ body {
 }
 
 @media (max-width: 425px) {
-  .main .weather .infos .temp .temp_info .temp_value {
-    font-size: 2.75rem;
+  .main .weather .infos .temp {
+    flex-direction: column;
+    padding: 0px;
+    margin-bottom: 1rem;
+  }
+  .main .weather .infos .temp .temp_info {
+    text-align: center;
   }
 }
 @media (max-width: 375px) {
@@ -145,13 +152,8 @@ body {
   .main .weather .title {
     font-size: 1.5rem;
   }
-  .main .weather .infos .temp {
-    flex-direction: column;
-    padding: 0px;
-    margin-bottom: 1rem;
-  }
-  .main .weather .infos .temp .temp_info {
-    text-align: center;
+  .main .weather .infos .temp .temp_info .temp_value {
+    font-size: 2rem;
   }
   .main .weather .infos .other_infos {
     grid-template-columns: 1fr;
