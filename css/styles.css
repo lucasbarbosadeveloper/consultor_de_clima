@@ -13,6 +13,7 @@ body {
   height: 100vh;
   background: linear-gradient(#3b82f6, #2f4c97);
   padding: 1.25rem;
+  overflow: hidden;
 }
 
 .main {
